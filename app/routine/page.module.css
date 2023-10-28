@@ -7,7 +7,15 @@
 
 .title {
   font-size: 30px;
-  text-align: center;
+}
+
+.listItemButtons {
+  min-width: 165px;
+  margin-left: 30px;
+}
+
+.listItemButtons :not(:first-child) {
+  margin-left: 16px;
 }
 
 .footer {
