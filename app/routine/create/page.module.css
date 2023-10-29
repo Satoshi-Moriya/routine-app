@@ -10,36 +10,6 @@
   text-align: center;
 }
 
-.timeTable {
-  width: 100%;
-}
-
-.timeBlock {
-  display: flex
-}
-
-.timeNum {
-  width: 40px;
-  position: relative;
-  font-size: 14px;
-}
-
-.timeNum::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: calc(400px - (40px + 20px));
-  background-color: rgb(218,220,224);
-  top: 50%;
-  transform: translateY(-50%);
-  left: calc(100% + 20px);
-}
-
-.timeClickArea {
-  flex: 1;
-  margin-left: 20px;
-}
-
 .createButtonWrapper {
   text-align: center;
 }
