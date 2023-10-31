@@ -11,6 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Container from '@mui/material/Container';
 import Link from 'next/link';
+import { Auth } from "aws-amplify"
 
 export default function Header() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -21,6 +22,7 @@ export default function Header() {
 
   const handleClose = () => {
     setAnchorEl(null);
+    Auth.signOut();
   };
 
   return (
