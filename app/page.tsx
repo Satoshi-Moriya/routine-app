@@ -9,7 +9,7 @@ import { Amplify } from 'aws-amplify';
 import {Authenticator} from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css'
 
-import awsExports from '../lib/aws-exports.js';
+import awsExports from '../src/aws-exports.js';
 Amplify.configure(awsExports);
 
 export default function Home() {
