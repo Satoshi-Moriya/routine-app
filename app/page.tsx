@@ -5,17 +5,11 @@ import styles from './page.module.css'
 import Container from '@mui/material/Container';
 import Header from '@/components/Header';
 import Hooter from '@/components/Footer';
-import { Amplify } from 'aws-amplify';
-import {Authenticator} from "@aws-amplify/ui-react";
-import '@aws-amplify/ui-react/styles.css'
-
-import awsExports from '../src/aws-exports.js';
-Amplify.configure(awsExports);
 
 export default function Home() {
 
   return (
-    <Authenticator>
+    <>
       <Header />
       <main className={styles.main}>
         <Container maxWidth="sm">
@@ -32,6 +26,6 @@ export default function Home() {
         </Container>
       </main>
       <Hooter />
-    </Authenticator>
+    </>
   )
 }
